@@ -34,3 +34,8 @@ There are no Lombok-generated accessors
 - `build.sbt`: multi-project setup with Lombok
 - `lib/src/main/java/example/Person.java`: annotated with `@Data`
 - `app/src/main/java/example/Main.java`: uses generated accessors
+
+
+## Workaround
+
+Disabling pipeline export in the Java subproject with `Compile / exportPipelining := false` makes it work.
